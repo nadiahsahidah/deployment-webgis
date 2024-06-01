@@ -1,7 +1,7 @@
 /* Stil untuk option pada select */
 select option {
-  background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang */
-  color: #fff; /* Warna teks */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; 
 }
 
 
@@ -20,11 +20,6 @@ form {
   left: 50% !important;
   transform: translate(-50%, -50%);
 }
-
-/* Style untuk judul */
-/* form h2 {
-padding: 20px;
-} */
 
 label.form-label {
 margin: 10px;
