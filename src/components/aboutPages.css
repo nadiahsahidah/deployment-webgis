@@ -1,0 +1,55 @@
+.training {
+  width: 100%;
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%
+}
+
+.training .left {
+  text-align: center;
+  margin: auto;
+  padding: 1rem 4rem;
+  max-width: 600px;
+}
+
+.training .left p {
+  margin: 0.7rem 0;
+  color: black;
+  text-align: justify;
+}
+
+
+.training .right {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+.training .right p {
+  margin: 0;
+  color: black;
+  text-align: justify;
+  padding: 1%;
+}
+
+.training .right h2 {
+  padding-bottom: 20px;
+}
+
+.training .right h4 {
+  text-align: left;
+  font-size: 23px;
+}
+
+@media screen and (max-width: 1140px) {
+  .training {
+    grid-template-columns: 1fr;
+  }
+
+  .training img {
+    max-width: 80%;
+
+  }
+}
