@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15b2a4e9.css",
+    "main.js": "/static/js/main.d6e800ce.js",
+    "static/media/hero-road.jpg": "/static/media/hero-road.a45fa4b27902f0cd3e0c.jpg",
+    "static/media/Logo Jabar.png": "/static/media/Logo Jabar.9cef99e64f7c1aa89f13.png",
+    "static/media/maincropped_lubang.jpg": "/static/media/maincropped_lubang.88ea4de8a10cc7a4e1c0.jpg",
+    "static/media/texture-cracked-old-asphalt.webp": "/static/media/texture-cracked-old-asphalt.58960eb6c948d434e669.webp",
+    "static/media/istockphoto-lubang.jpg": "/static/media/istockphoto-lubang.a786e877eb3b88810cfb.jpg",
+    "static/media/map_icon.png": "/static/media/map_icon.73948584a92a3fc87a6f.png",
+    "static/media/markerMerah.webp": "/static/media/markerMerah.70269c5147262a4343c7.webp",
+    "static/media/road_icon.png": "/static/media/road_icon.0763ff58f122e53d33aa.png",
+    "static/media/markerHijau.png": "/static/media/markerHijau.21aafc208f741392a98c.png",
+    "static/media/user.png": "/static/media/user.8d49e377c7c342895ec2.png",
+    "index.html": "/index.html",
+    "main.15b2a4e9.css.map": "/static/css/main.15b2a4e9.css.map",
+    "main.d6e800ce.js.map": "/static/js/main.d6e800ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15b2a4e9.css",
+    "static/js/main.d6e800ce.js"
+  ]
+}

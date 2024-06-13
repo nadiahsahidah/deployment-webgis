@@ -67,8 +67,11 @@ const FormLaporUser = () => {
 
     if (!latitude || !longitude) {
       const location = `${desa}, ${kecamatan}, ${kabupaten_kota}, ${provinsi}`;
+      // console.log('Fetching coordinates before submit for:', location); // Debugging
       await fetchCoordinates(location);
     }
+
+    // console.log('Submitting data with coordinates:', { latitude, longitude }); // Debugging
 
     const formattedDate = format(new Date(date), 'MM/dd/yyyy');
     const token = localStorage.getItem('userToken'); 
@@ -111,7 +114,7 @@ const FormLaporUser = () => {
     <div>
         <Navbar />
     </div>
-    <Form style={{ marginTop: "10%" }} onSubmit={handleSubmit}>
+    <Form style={{ marginTop: "5%" }} onSubmit={handleSubmit}>
         <h2>Laporkan Kerusakan Jalan</h2>
         <InputGroup as={Row} className="mb-3">
           <Col sm="6">
