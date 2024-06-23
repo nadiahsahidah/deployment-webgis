@@ -55,7 +55,7 @@ const Login = () => {
     <Form onSubmit={handleSubmit}>
       <h2>Masuk Akun Sobat Jabar</h2>
       <Form.Group className="mb-3" controlId="formBasicEmail" >
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Email address <span className="text-danger">*</span></Form.Label>
         <Form.Control 
           type="email" 
           placeholder="Masukkan email" 
@@ -64,13 +64,10 @@ const Login = () => {
           required 
           autoComplete="email"
         />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label>Password <span className="text-danger">*</span></Form.Label>
         <Form.Control 
           type="password" 
           placeholder="Masukkan password" 
@@ -80,6 +77,9 @@ const Login = () => {
           autoComplete="current-password"
         />
       </Form.Group>
+      <Form.Text className="text-danger">
+        * wajib diisi
+      </Form.Text>
       <p>Belum punya akun? <a href="/SignUp">Register</a></p>
       <Button variant="login" type="submit">
         Login

@@ -148,17 +148,18 @@ const Admin = () => {
     await Swal.fire({
       title: "Edit History Kerusakan Jalan",
       html: `
-        <h5> Penanganan </h5>
+        <h5> Penanganan <span style= 'color: red'>*</span></h5>
         <select id="uraian" class="swal2-input">
           <option value="sudah ditangani" ${findData.penanganan.uraian === 'sudah ditangani' ? 'selected' : ''}>Sudah Ditangani</option>
           <option value="belum ditangani" ${findData.penanganan.uraian === 'belum ditangani' ? 'selected' : ''}>Belum Ditangani</option>
         </select>
-        <h5> Tanggal Penanganan </h5>
+        <h5> Tanggal Penanganan <span style= 'color: red'>*</span></h5>
         <input id="date" class="swal2-input" type="date" value="${formattedDate}">
-        <h5> Biaya </h5>
-        <input id="biaya" class="swal2-input" value="${findData.penanganan.biaya}">
-        <h5> Cacah </h5>
+        <h5> Biaya <span style= 'color: red'>*</span></h5>
+        <input id="biaya" class="swal2-input" type="number" value="${findData.penanganan.biaya}">
+        <h5> Cacah <span style= 'color: red'>*</span></h5>
         <input id="cacah" class="swal2-input" value="${findData.penanganan.cacah}">
+        <p style= 'color: red'>* wajib diisi</p>
       `,
       showCancelButton: true,
       preConfirm: () => {

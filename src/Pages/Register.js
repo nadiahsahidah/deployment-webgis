@@ -48,7 +48,7 @@ const Register = () => {
     <Form onSubmit={handleSubmit}>
       <h2>Buat Akun Sobat Jabar</h2>
       <Form.Group className="mb-2" controlId="formBasicNama">
-        <Form.Label>Nama Lengkap</Form.Label>
+        <Form.Label>Nama Lengkap <span className="text-danger">*</span></Form.Label>
         <Form.Control
           type='text'
           placeholder='Masukkan nama'
@@ -58,7 +58,7 @@ const Register = () => {
         />
       </Form.Group>
       <Form.Group className="mb-2" controlId="formBasicEmail" >
-        <Form.Label>Email</Form.Label>
+        <Form.Label>Email <span className="text-danger">*</span></Form.Label>
         <Form.Control 
           type="email" 
           placeholder="Masukkan email" 
@@ -69,7 +69,7 @@ const Register = () => {
         />
       </Form.Group>
       <Form.Group className="mb-2" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label>Password <span className="text-danger">*</span></Form.Label>
         <Form.Control 
           type="password" 
           placeholder="Masukkan password" 
@@ -80,7 +80,7 @@ const Register = () => {
         />
       </Form.Group>
       <Form.Group className="mb-2" controlId="formBasicTelepon">
-        <Form.Label>Nomor Telepon</Form.Label>
+        <Form.Label>Nomor Telepon <span className="text-danger">*</span></Form.Label>
         <Form.Control 
           type="text" 
           placeholder="Masukkan nomor telepon" 
@@ -89,6 +89,9 @@ const Register = () => {
           required
         />
       </Form.Group>
+      <Form.Text className="text-danger" style={{marginBottom: 15}}>
+        * wajib diisi
+      </Form.Text>
       {/* <Form.Group className="mb-2" controlId="formBasicPekerjaan">
         <Form.Label>Pekerjaan</Form.Label>
         <Form.Control 

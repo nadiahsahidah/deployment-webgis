@@ -10,6 +10,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import CommentPopup from '../components/CommentPopup';
 import './MapPage.css'
+import userImage from '../assets/user.png'
 
 // set marker history
 const markerIcon = new L.Icon({
@@ -307,7 +308,14 @@ const MapPage = () => {
                     <p style={{color: 'black', padding: 0, marginTop: 8, marginBottom: 8 }}>Komentar :
                     {showComment && showComment.map((comment) => {
                       return (
-                        <p style={{color: 'black', padding: 0 }}> "{comment.content}"</p>
+                        <div style={{ display: 'flex', alignItems: 'start', marginTop: '10px', padding: '5px', border: '1px solid #ccc', borderRadius:5}}>
+                          <img src={userImage} alt="user" style={{ width: '30px', borderRadius: '50%', marginRight: '8px' }} />
+                          <div>
+                            <p style={{color: 'black', padding: 0, marginTop: 4, marginBottom: 8 }}>Anonim</p>
+                            <p style={{color: 'black', padding: 0, marginTop: 8, marginBottom: 8 }}>{new Date(comment.created_at).toLocaleDateString()}</p>
+                            <p style={{color: 'black', padding: 0, marginTop: 8, marginBottom: 8 }}>"{comment.content}"</p>
+                          </div>
+                        </div>
                       )
                     })}
                     </p>
